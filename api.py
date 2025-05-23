@@ -47,5 +47,4 @@ def predict_follow_up_check_up():
     return jsonify({"Prediction": response})
 
 if __name__ == '__main__'  :
-    api.run(debug=True, port=8080)     
-
+  api.run(host="0.0.0.0", port=8080, debug=True)
